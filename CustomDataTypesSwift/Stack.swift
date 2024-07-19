@@ -37,8 +37,21 @@ class Stack<T> { // Type LIFO
 }
 
 
-struct StackStruct<T> {
+struct StackStruct<T>: Container {
+    typealias Item = T
     fileprivate var array = [T]()
+    
+    mutating func append(_ item: T) {
+        array.append(item)
+    }
+    
+    mutating func remove(_ item: T) -> T? {
+        array.popLast()
+    }
+    
+    subscript(i: Int) -> T {
+        array[i]
+    }
     
     mutating func push(_ item: T) {
         array.append(item)

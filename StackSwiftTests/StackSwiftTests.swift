@@ -53,7 +53,7 @@ final class StackSwiftTests: XCTestCase {
             let id: Int
         }
         
-        var customStack = Stack<CustomType>()
+        let customStack = Stack<CustomType>()
         XCTAssertTrue(customStack.isEmpty)
         
         let item1 = CustomType(id: 1)

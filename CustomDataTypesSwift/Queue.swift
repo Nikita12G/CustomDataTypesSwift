@@ -7,9 +7,25 @@
 
 import Foundation
 
-class Queue<T> {
+class Queue<T>: Container {
+    typealias Item = T
     private var array: [T] = []
     
+    func append(_ item: T) {
+        array.append(item)
+    }
+    
+    func remove(_ item: T) -> T? {
+        if isEmpty {
+            return nil
+        } else {
+            return array.removeFirst()
+        }
+    }
+    
+    subscript(i: Int) -> T {
+        array[i]
+    }
     // Add element to queue O(1)
     func enqueue(_ item: T) {
         array.append(item)
