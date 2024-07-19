@@ -17,6 +17,21 @@ struct ContentView: View {
         }
         .padding()
     }
+    func example() {
+        // Example use AnyContainer with makeOpaqueContainer
+        let opaqueContainer = makeOpaqueContainer() as? Items
+        guard let opaqueContainer = opaqueContainer else { return }
+        var anyContainer = AnyContainer(opaqueContainer)
+
+        print(anyContainer.count) // 2
+        print(anyContainer[0] ?? "nil") // "iPhone"
+        anyContainer.append("Windows Phone")
+        print(anyContainer.count) // 3
+        print(anyContainer.remove(atIndex: 1) ?? "nil") // "android"
+        print(anyContainer.count) // 2
+        print(anyContainer[1] ?? "nil") // "Windows Phone"
+    }
+    
 }
 
 #Preview {

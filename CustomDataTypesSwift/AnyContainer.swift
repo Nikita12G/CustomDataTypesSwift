@@ -8,7 +8,7 @@
 import Foundation
 
 
-private class AnyBox<Item>: Container {
+class AnyBox<Item>: Container {
     func append(_ item: Item) {
         assertionFailure("This method is abstract")
     }
@@ -29,7 +29,7 @@ private class AnyBox<Item>: Container {
     }
 }
 
-private class AnyContainer<Items: Container>: AnyBox<Items.Item> {
+class AnyContainer<Items: Container>: AnyBox<Items.Item> {
     private var container: Items
     
     init(_ container: Items) {
