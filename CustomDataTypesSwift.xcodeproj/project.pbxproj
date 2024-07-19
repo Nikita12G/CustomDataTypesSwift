@@ -16,6 +16,7 @@
 		A1533DC42C4A6E1F0097B977 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1533DC32C4A6E1F0097B977 /* Queue.swift */; };
 		A1533DCC2C4A70E90097B977 /* QueueSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1533DCB2C4A70E90097B977 /* QueueSwiftTests.swift */; };
 		A1533DD32C4A7B200097B977 /* ContaiterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1533DD22C4A7B200097B977 /* ContaiterProtocol.swift */; };
+		A1533DD52C4A84A90097B977 /* Opaque.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1533DD42C4A84A90097B977 /* Opaque.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A1533DC92C4A70E90097B977 /* QueueSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueueSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1533DCB2C4A70E90097B977 /* QueueSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueSwiftTests.swift; sourceTree = "<group>"; };
 		A1533DD22C4A7B200097B977 /* ContaiterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaiterProtocol.swift; sourceTree = "<group>"; };
+		A1533DD42C4A84A90097B977 /* Opaque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opaque.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A1533DB12C4A5ED90097B977 /* Stack.swift */,
 				A1533DC32C4A6E1F0097B977 /* Queue.swift */,
 				A1533DD22C4A7B200097B977 /* ContaiterProtocol.swift */,
+				A1533DD42C4A84A90097B977 /* Opaque.swift */,
 				A1533DA72C4A5E740097B977 /* Assets.xcassets */,
 				A1533DA92C4A5E740097B977 /* Preview Content */,
 			);
@@ -267,6 +270,7 @@
 				A1533DB22C4A5ED90097B977 /* Stack.swift in Sources */,
 				A1533DA42C4A5E720097B977 /* CustomDataTypesSwiftApp.swift in Sources */,
 				A1533DC42C4A6E1F0097B977 /* Queue.swift in Sources */,
+				A1533DD52C4A84A90097B977 /* Opaque.swift in Sources */,
 				A1533DD32C4A7B200097B977 /* ContaiterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

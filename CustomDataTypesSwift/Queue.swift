@@ -15,11 +15,11 @@ class Queue<T>: Container {
         array.append(item)
     }
     
-    func remove(_ item: T) -> T? {
+    func remove(atIndex: Int) -> T? {
         if isEmpty {
             return nil
         } else {
-            return array.removeFirst()
+            return array.remove(at: atIndex)
         }
     }
     

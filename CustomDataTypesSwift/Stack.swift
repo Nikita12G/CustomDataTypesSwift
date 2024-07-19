@@ -45,8 +45,8 @@ struct StackStruct<T>: Container {
         array.append(item)
     }
     
-    mutating func remove(_ item: T) -> T? {
-        array.popLast()
+    mutating func remove(atIndex: Int) -> T? {
+        array.remove(at: atIndex)
     }
     
     subscript(i: Int) -> T {
