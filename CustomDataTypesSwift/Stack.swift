@@ -49,7 +49,7 @@ struct StackStruct<T>: Container {
         array.remove(at: atIndex)
     }
     
-    subscript(i: Int) -> T {
+    subscript(i: Int) -> T? {
         array[i]
     }
     

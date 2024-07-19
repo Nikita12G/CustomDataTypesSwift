@@ -23,7 +23,7 @@ class Queue<T>: Container {
         }
     }
     
-    subscript(i: Int) -> T {
+    subscript(i: Int) -> T? {
         array[i]
     }
     // Add element to queue O(1)

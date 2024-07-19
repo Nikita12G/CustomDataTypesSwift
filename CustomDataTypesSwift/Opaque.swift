@@ -19,7 +19,7 @@ struct Items: Container {
         itemsArray.remove(at: atIndex)
     }
     
-    subscript(i: Int) -> String {
+    subscript(i: Int) -> String? {
         itemsArray[i]
     }
     

@@ -12,5 +12,5 @@ protocol Container {
     mutating func append(_ item: Item)
     mutating func remove(atIndex: Int) -> Item?
     var count: Int { get }
-    subscript(i: Int) -> Item { get }
+    subscript(i: Int) -> Item? { get }
 }
